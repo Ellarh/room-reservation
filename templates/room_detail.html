@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Room Reservation</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <h1>ROOM DETAILS</h1>
+    <h3>Type: {{ room_detail.room_type }}</h3>
+    <h3>Room No: {{ room_detail.room_no }}</h3>
+    <h3>No of Beds: {{ room_detail.no_of_beds }}</h3>
+    <h3>Price: {{ room_detail.price_of_room }}</h3>
+    <h3>Tv: {{ room_detail.is_there_tv}}</h3>
+    <h3>Fridge: {{ room_detail.is_there_fridge}}</h3>
+    <h3>Drinks: {{ room_detail.is_there_drinks}}</h3>
+    <h3>Free Breakfast: {{ room_detail.free_breakfast}}</h3>
+
+    <br>
+    <h2>Make a Reservation</h2>
+    <a href="{% url 'reserve_booking' %}" class="btn btn-primary">Book</a>
+
+</body>
+</html>
